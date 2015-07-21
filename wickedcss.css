@@ -5,13 +5,11 @@
  */
  
  /*
-==============================================
-rotation
-==============================================
+==========
+Rotation
+==========
 */
 .rotation{
-	
-
 	animation-name: rotation;
 	-webkit-animation-name: rotation;	
 
@@ -31,13 +29,207 @@ rotation
     to   { -webkit-transform: rotate(360deg) translateX(100px) rotate(-360deg); }
 }
  
-
-
-
  /*
-==============================================
+==========
+SideToSide
+==========
+*/
+.SideToSide{
+	animation-name: SideToSide;
+	-webkit-animation-name: SideToSide;	
+
+	animation-duration: 3s;	
+	-webkit-animation-duration: 3s;
+
+	animation-timing-function: ease;	
+	-webkit-animation-timing-function: ease;
+
+	-webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;	
+
+	visibility: visible !important;						
+}
+@-webkit-keyframes SideToSide {
+  0% {
+    transform: translate(100px, 0);
+  }
+  50% {
+  	transform: translate(-100px, 0);
+  }
+  100% {
+  	transform: translate(100px, 0);
+  }
+}
+@keyframes SideToSide {
+  0% {
+    transform: translate(100px, 0);
+  }
+  50% {
+  	transform: translate(-100px, 0);
+  }
+  100% {
+  	transform: translate(100px, 0);
+  }
+}
+
+/*
+==========
+BlobOut
+==========
+*/
+.blobOut{
+	animation-name: blobOut;
+	-webkit-animation-name: blobOut;	
+
+	animation-duration: 2s;	
+	-webkit-animation-duration: 2s;
+
+	animation-timing-function: cubic-bezier(0.5, 0.2, 0.3, 1.0);	
+	-webkit-animation-timing-function: cubic-bezier(0.5, 0.2, 0.3, 1.0);
+
+	-webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;	
+
+	visibility: visible !important;						
+}
+@-webkit-keyframes blobOut {
+  0% {
+    transform: scale(.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes blobOut {
+  0% {
+    transform: scale(.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/*
+==========
+spinner
+==========
+*/
+.spinner{
+	animation-name: spinner;
+	-webkit-animation-name: spinner;	
+
+	animation-duration: 2s;	
+	-webkit-animation-duration: 2s;
+
+	animation-timing-function: linear;	
+	-webkit-animation-timing-function: linear;
+
+	-webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;	
+
+	visibility: visible !important;						
+}
+@-webkit-keyframes spinner {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spinner {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+/*
+==========
+pulse
+==========
+*/
+.pulse{
+	animation-name: pulse;
+	-webkit-animation-name: pulse;	
+
+	animation-duration: 2s;	
+	-webkit-animation-duration: 2s;
+
+	animation-timing-function: linear;	
+	-webkit-animation-timing-function: linear;
+
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.9);
+		opacity: 0.9;		
+	}
+	50% {
+		transform: scale(1);
+		opacity: 1;	
+	}	
+	100% {
+		transform: scale(0.9);
+		opacity: 0.9;	
+	}			
+}
+
+@-webkit-keyframes pulse {
+	0% {
+		-webkit-transform: scale(0.95);
+		opacity: 0.9;		
+	}
+	50% {
+		-webkit-transform: scale(1);
+		opacity: 1;	
+	}	
+	100% {
+		-webkit-transform: scale(0.95);
+		opacity: 0.9;	
+	}			
+}
+
+
+
+/*
+==========
+shake
+==========
+*/
+.shake{
+	animation-name: shake;
+	-webkit-animation-name: shake;	
+
+	animation-duration: 0.4s;	
+	-webkit-animation-duration: 0.4s;
+
+	animation-timing-function: ease;	
+	-webkit-animation-timing-function: ease;
+
+	animation-iteration-count: 1;
+	-webkit-animation-iteration-count: 1;
+}
+
+@keyframes shake {
+	0%, 100% {transform: translateX(0);}
+    16%, 50%, 83% {transform: translateX(-10px);}
+    33%, 66% {transform: translateX(10px);}
+}
+
+@-webkit-keyframes shake {
+	0%, 100% {-webkit-transform: translateX(0);}
+    16%, 50%, 83% {-webkit-transform: translateX(-10px);}
+    33%, 66% {-webkit-transform: translateX(10px);}	
+}
+
+/*
+==========
+Boring ones from here on down
+==========
+*/
+
+/*
+==========
 slideDown
-==============================================
+==========
 */
 .slideDown{
 	animation-name: slideDown;
@@ -95,9 +287,9 @@ slideDown
 }
 
 /*
-==============================================
+==========
 slideUp
-==============================================
+==========
 */
 
 
@@ -157,9 +349,9 @@ slideUp
 }
 
 /*
-==============================================
+==========
 slideLeft
-==============================================
+==========
 */
 
 
@@ -219,9 +411,9 @@ slideLeft
 }
 
 /*
-==============================================
+==========
 slideRight
-==============================================
+==========
 */
 
 
