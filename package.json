@@ -1,0 +1,29 @@
+{
+  "name": "wickedcss",
+  "version": "1.0.0",
+  "description": "An animation library for common and wicked CSS3 animations",
+  "main": "wickedcss.css",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kristofferandreasen/wickedCSS.git"
+  },
+  "keywords": [
+    "Animation",
+    "CSS3"
+  ],
+  "author": "Kristoffer Andreasen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kristofferandreasen/wickedCSS/issues"
+  },
+  "homepage": "https://github.com/kristofferandreasen/wickedCSS#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-cssmin": "^0.12.3",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}
