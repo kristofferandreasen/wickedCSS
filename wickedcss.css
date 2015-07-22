@@ -222,6 +222,122 @@ shake
 
 /*
 ==========
+barrelRoll
+==========
+*/
+.barrelRoll{
+	animation-name: barrelRoll;
+	-webkit-animation-name: barrelRoll;	
+
+	animation-duration: 0.4s;	
+	-webkit-animation-duration: 0.4s;
+
+	animation-timing-function: ease;	
+	-webkit-animation-timing-function: ease;
+
+	animation-iteration-count: 1;
+	-webkit-animation-iteration-count: 1;
+}
+
+@keyframes barrelRoll {
+    from { transform: rotate(0deg) }
+    to   { transform: rotate(360deg) }
+}
+
+@-webkit-keyframes barrelRoll {
+    from { -webkit-transform: rotate(0deg) }
+    to   { -webkit-transform: rotate(360deg) }
+}
+
+
+/*
+=========
+hover
+=========
+*/
+
+.hover{
+	animation-name: hover;
+	-webkit-animation-name: hover;
+
+	animation-duration: 1.5s;	
+	-webkit-animation-duration: 1.5s;
+
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes hover {
+	0% {
+		transform: translateY(0%);	
+	}
+	50% {
+		transform: translateY(8%);	
+	}	
+	100% {
+		transform: translateY(0%);
+	}			
+}
+
+@-webkit-keyframes hover {
+	0% {
+		-webkit-transform: translateY(0%);	
+	}
+	50% {
+		-webkit-transform: translateY(8%);	
+	}	
+	100% {
+		-webkit-transform: translateY(0%);
+	}			
+}
+
+
+/*
+======
+wiggle
+======
+*/
+
+.wiggle{
+	animation-name: wiggle;
+	-webkit-animation-name: wiggle;	
+
+	animation-duration: 2.5s;	
+	-webkit-animation-duration: 2.5s;
+
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes wiggle {
+	0% {
+		transform: rotate(-4deg);	
+	}
+	50% {
+		transform: rotate(4deg);
+	}
+	100% {
+		transform: rotate(-4deg);	
+	}						
+}
+
+@-webkit-keyframes wiggle {
+	0% {
+		-webkit-transform: rotate(-4deg);	
+	}
+	50% {
+		-webkit-transform: rotate(4deg);
+	}
+	100% {
+		-webkit-transform: rotate(-4deg);	
+	}				
+}
+
+
+
+
+/*
+==========
 Boring ones from here on down
 ==========
 */
