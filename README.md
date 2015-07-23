@@ -9,5 +9,5 @@ They can be fun to play with.
 
 To use the library, simply download and link to the file in your header.
 
-<code><link rel="stylesheet" href="wickedcss.min.css"/></code>
+    <link rel="stylesheet" href="wickedcss.min.css"/>
 
