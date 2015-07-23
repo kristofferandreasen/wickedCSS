@@ -23,7 +23,13 @@ Simply add the animation class to your element and it will perform your wicked a
     
 In this case, the contents of the div will perform the barrelRoll animation. All the classes can be found on the [Project Page](https://kristofferandreasen.github.io/wickedcss/).
 
+# Customizations
+
 It's time to take a look at some further customizations. If your animated element is going to be displayed as part of the initial view, remember to set the elements visibility to hidden. You can use this snippet.
 
     .animationclass { visibility:hidden; }
+    
+
+    
+
 
