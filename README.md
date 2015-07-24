@@ -27,6 +27,31 @@ The classes can be applied to all elements including images.
 
     <img src="images/mushroom.png" class="spinner"/>
 
+##### Classes
+
+- floater
+- barrelRoll
+- rollerRight
+- rollerLeft
+- heartbeat
+- pulse
+- rotation
+- sideToSide
+- zoomer
+- zoomerOut
+- spinner
+- wiggle
+- shake
+- pound
+- slideUp
+- slideDown
+- slideRight
+- slideLeft
+- fadeIn
+- fadeOut
+- rotateInRight
+- rotateInLeft
+
 # Customizations
 
 ##### Show on scroll

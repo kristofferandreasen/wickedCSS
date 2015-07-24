@@ -53,7 +53,7 @@
 
           <div class="container center-align">
             <div class="col s12">
-                <div id="animationelement" class="hover"></div>
+                <div id="animationelement" class="floater"></div>
             </div>
           </div>
 
@@ -70,7 +70,7 @@
             </div>
              <div class="row">
               <div class="col s12 m3 l2">
-                  <a href="#" id="hoverButton" class="waves-effect waves-light btn-large white blue-text">hover</a>
+                  <a href="#" id="floaterButton" class="waves-effect waves-light btn-large white blue-text">floater</a>
                   <div class="section"></div>
               </div>
               <div class="col s12 m3 l2">
@@ -103,6 +103,10 @@
               </div>
               <div class="col s12 m3 l2">
                   <a href="#" id="zoomerButton" class="waves-effect waves-light btn-large white blue-text">zoomer</a>
+                  <div class="section"></div>
+              </div>
+              <div class="col s12 m3 l2">
+                  <a href="#" id="zoomerOutButton" class="waves-effect waves-light btn-large white blue-text">zoomerOut</a>
                   <div class="section"></div>
               </div>
               <div class="col s12 m3 l2">
@@ -151,6 +155,14 @@
               </div>
               <div class="col s12 m3 l2">
                 <a href="#" id="rotateInLeftButton" class="waves-effect waves-light btn-large white blue-text">rotateInLeft</a>
+                <div class="section"></div>
+              </div>
+               <div class="col s12 m3 l2">
+                <a href="#" id="rotateInButton" class="waves-effect waves-light btn-large white blue-text">rotateIn</a>
+                <div class="section"></div>
+              </div>
+               <div class="col s12 m3 l2">
+                <a href="#" id="bounceInButton" class="waves-effect waves-light btn-large white blue-text">bounceIn</a>
                 <div class="section"></div>
               </div>
             </div>
@@ -223,6 +235,13 @@
         });
     });
 
+     $('#zoomerOutButton').click(function() {
+      $(this).each(function(){
+          $('#animationelement').removeClass(); 
+          $('#animationelement').addClass("zoomerOut");
+        });
+    });
+
     $('#spinnerButton').click(function() {
       $(this).each(function(){
           $('#animationelement').removeClass(); 
@@ -251,10 +270,10 @@
         });
     });
 
-      $('#hoverButton').click(function() {
+      $('#floaterButton').click(function() {
       $(this).each(function(){
           $('#animationelement').removeClass(); 
-          $('#animationelement').addClass("hover");
+          $('#animationelement').addClass("floater");
         });
     });
 
@@ -347,7 +366,21 @@
           $('#animationelement').removeClass();       
           $('#animationelement').addClass("rotateInLeft");
         });
-    });  
+    });
+
+     $('#rotateInButton').click(function() {
+      $(this).each(function(){
+          $('#animationelement').removeClass();       
+          $('#animationelement').addClass("rotateIn");
+        });
+    });
+
+     $('#bounceInButton').click(function() {
+      $(this).each(function(){
+          $('#animationelement').removeClass();       
+          $('#animationelement').addClass("bounceIn");
+        });
+    });      
 
 </script>
 

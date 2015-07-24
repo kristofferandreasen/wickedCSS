@@ -85,8 +85,8 @@ zoomer
 	animation-name: zoomer;
 	-webkit-animation-name: zoomer;	
 
-	animation-duration: 2s;	
-	-webkit-animation-duration: 2s;
+	animation-duration: 1s;	
+	-webkit-animation-duration: 1s;
 
 	animation-timing-function: cubic-bezier(0.5, 0.2, 0.3, 1.0);	
 	-webkit-animation-timing-function: cubic-bezier(0.5, 0.2, 0.3, 1.0);
@@ -110,6 +110,46 @@ zoomer
   }
   100% {
     transform: scale(1);
+  }
+}
+
+/*
+==========
+zoomerOut
+==========
+*/
+.zoomerOut{
+	animation-name: zoomerOut;
+	-webkit-animation-name: zoomerOut;	
+
+	animation-duration: 1s;	
+	-webkit-animation-duration: 1s;
+
+	animation-timing-function: cubic-bezier(0.5, 0.2, 0.3, 1.0);	
+	-webkit-animation-timing-function: cubic-bezier(0.5, 0.2, 0.3, 1.0);
+
+	-webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;	
+
+	visibility: visible !important;						
+}
+@-webkit-keyframes zoomerOut {
+  0% {
+    -webkit-transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+  }
+}
+@keyframes zoomerOut {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
   }
 }
 
@@ -262,13 +302,13 @@ barrelRoll
 
 /*
 =========
-hover
+floater
 =========
 */
 
-.hover{
-	animation-name: hover;
-	-webkit-animation-name: hover;
+.floater{
+	animation-name: floater;
+	-webkit-animation-name: floater;
 
 	animation-duration: 1.5s;	
 	-webkit-animation-duration: 1.5s;
@@ -279,7 +319,7 @@ hover
 	visibility: visible !important;	
 }
 
-@keyframes hover {
+@keyframes floater {
 	0% {
 		transform: translateY(0%);	
 	}
@@ -291,7 +331,7 @@ hover
 	}			
 }
 
-@-webkit-keyframes hover {
+@-webkit-keyframes floater {
 	0% {
 		-webkit-transform: translateY(0%);	
 	}
@@ -842,4 +882,148 @@ rotateInLeft
     to   { 
     	transform: rotate(360deg) translateX(0) rotate(-360deg); 
     }
+}
+
+/*
+==========
+rotateIn
+==========
+*/
+.rotateIn {
+ animation-name: rotateIn;
+ -webkit-animation-name: rotateIn;
+
+ animation-duration: 3s;	
+ -webkit-animation-duration: 3s;
+
+ animation-timing-function: ease;	
+ -webkit-animation-timing-function: ease;
+
+ -webkit-animation-iteration-count: 1;
+ animation-iteration-count: 1;	
+
+ -webkit-transform-origin: center;
+ transform-origin: center;
+
+ visibility: visible !important;			
+}
+
+
+@-webkit-keyframes rotateIn {
+  0% {
+    -webkit-transform: rotate3d(0, 0, 1, -720deg);
+    transform: rotate3d(0, 0, 1, -720deg);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes rotateIn {
+  0% {
+    -webkit-transform: rotate3d(0, 0, 1, -720deg);
+    transform: rotate3d(0, 0, 1, -720deg);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1;
+  }
+}
+
+
+/*
+==========
+bounceIn
+==========
+*/
+
+.bounceIn{
+   
+   -webkit-animation-name: bounceIn;
+  animation-name: bounceIn;
+
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
+
+  -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+   animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+}
+
+@-webkit-keyframes bounceIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(.9, .9, .9);
+    transform: scale3d(.9, .9, .9);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+
+  80% {
+    -webkit-transform: scale3d(.97, .97, .97);
+    transform: scale3d(.97, .97, .97);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(.9, .9, .9);
+    transform: scale3d(.9, .9, .9);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+
+  80% {
+    -webkit-transform: scale3d(.97, .97, .97);
+    transform: scale3d(.97, .97, .97);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
 }
