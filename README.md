@@ -5,7 +5,7 @@ The animations include regular CSS3 animations to be used in all settings.
 Additionally, the library includes a number of wicked animations, which aren't applicable in all situations.
 They can be fun to play with.
 
-For examples and documentation [View Project Page](https://kristofferandreasen.github.io/wickedcss/).
+For examples and documentation [View Project Page](http://kristofferandreasen.github.io/wickedCSS/).
 
 # Usage
 
@@ -21,7 +21,7 @@ Simply add the animation class to your element and it will perform your wicked a
 
     <div class="barrelRoll"> Place your content here </div>
     
-In this case, the contents of the div will perform the barrelRoll animation. All the classes can be found on the [Project Page](https://kristofferandreasen.github.io/wickedcss/).
+In this case, the contents of the div will perform the barrelRoll animation. All the classes can be found on the [Project Page](http://kristofferandreasen.github.io/wickedCSS/).
 
 The classes can be applied to all elements including images.
 
