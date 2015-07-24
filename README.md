@@ -31,7 +31,19 @@ The classes can be applied to all elements including images.
 
 ##### Show on scroll
 In order to show the animations on scroll, the library can be integrated with [wow.js](http://mynameismatthieu.com/WOW/).
-The animation will fire when the element enters the screen. It can be used like this:
+The animation will fire when the element enters the screen. Remember to include jQuery before wow.js like so:
+    
+###### Jquery:
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+    
+###### wow.js    
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+
+It can be used like this:
 
     <div class="wow barrelRoll"> Content to Reveal Here </div>
     
