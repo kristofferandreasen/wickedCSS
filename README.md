@@ -51,6 +51,8 @@ The classes can be applied to all elements including images.
 - fadeOut
 - rotateInRight
 - rotateInLeft
+- rotateIn
+- bounceIn
 
 # Customizations
 

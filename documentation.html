@@ -168,7 +168,7 @@
                     </code>
                   <div class="section"></div>
                   <h5 class="grey-text">
-                    Alternatively, you can use jQuery to specify when the animation should trigger.
+                    Alternatively, you can use jQuery to specify when the animation should trigger. Note that this option requires jQuery in your project. The animation will trigger when the animated element is 450 pixels from the top of the screen. To change this, simply change the 450 number to whatever you like.
                   </h5>
                   <code>
                     &lt;script&gt;
@@ -177,14 +177,24 @@
                       <br>    var&nbsp;imagePos&nbsp;=&nbsp;$&#40;this&#41;.offset&#40;.top;
                       <br>
                       <br>    var&nbsp;topOfWindow&nbsp;=&nbsp;$&#40;window&#41;.scrollTop&#40;;
-                      <br>      if&nbsp;&#40;imagePos&nbsp;&lt;&nbsp;topOfWindow+400&#41;&nbsp;{
-                      <br>        $&#40;this&#41;.addClass&#40;&quot;slideUp&quot;&#41;;
+                      <br>      if&nbsp;&#40;imagePos&nbsp;&lt;&nbsp;topOfWindow+450&#41;&nbsp;{
+                      <br>        $&#40;this&#41;.addClass&#40;&quot;barrelRoll&quot;&#41;;
                       <br>      }
                       <br>    }&#41;;
                       <br>  }&#41;;
                       <br>&lt;/script&gt;
                   </code>
-              </div>
+               <h5 class="grey-text">
+                    The animations can also be triggered by a button like the ones on the project page. You can do this with a simple jQuery snippet.
+                  </h5>
+                   <code>
+                       &lt;script&gt; <br>
+                            $('#animatedElement').click(function() {
+                              $(this).addClass(&quot;barrelRoll&quot;);
+                            });
+                      <br>&lt;/script&gt;
+                  </code>
+                </div>
             </div>
           </div>
 
@@ -217,7 +227,7 @@
               <div class="row">
                 <div class="col l6 s12">
                   <h5 class="white-text">WickedCSS</h5>
-                  <p class="grey-text text-lighten-4">For the ones looking to spice up their sites with some sweet animation effects. Find all you need here on the site and download the CSS file. Then youre ready to start adding animation to your content with simple classes.</p>
+                  <p class="grey-text text-lighten-4">For the ones looking to spice up their sites with some sweet animation effects. Find all you need here on the site and download the CSS file. Then you're ready to start adding animation to your content with simple classes.</p>
 
 
                 </div>
@@ -232,8 +242,7 @@
                 <div class="col l3 s12">
                   <h5 class="white-text">Connect</h5>
                   <ul>
-                    <li><a class="white-text" href="https://www.facebook.com/kristoffer.andreasen.73">Facebook</a></li>
-                    <li><a class="white-text" href="https://www.linkedin.com/profile/view?id=176878997&trk=nav_responsive_tab_profile">LinkedIn</a></li>
+                     <li><a class="white-text" href="https://twitter.com/krillebimbim">Twitter</a></li>
                   </ul>
                 </div>
               </div>
