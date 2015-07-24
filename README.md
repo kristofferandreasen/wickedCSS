@@ -33,11 +33,13 @@ The classes can be applied to all elements including images.
 In order to show the animations on scroll, the library can be integrated with [wow.js](http://mynameismatthieu.com/WOW/).
 The animation will fire when the element enters the screen. Remember to include jQuery before wow.js like so:
     
-Jquery with local fallback:
+*Jquery with local fallback:*
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
     
-wow.js    
+*wow.js*  
+
     <script src="js/wow.min.js"></script>
     <script>
     new WOW().init();
@@ -50,6 +52,7 @@ It can be used like this:
 ##### Show on scroll - Alternative
 The animation can alternatively be triggered at a specific position. In this example it will be triggered when the element is 450 pixels from the top of the screen.
 
+```javascript
     <script>
     	$(window).scroll(function() {
     		$('#animatedElement').each(function(){
@@ -62,6 +65,7 @@ The animation can alternatively be triggered at a specific position. In this exa
     		});
     	});
     </script>
+```
 
 
 ##### Hide before the animation starts
