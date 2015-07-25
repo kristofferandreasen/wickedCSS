@@ -93,14 +93,3 @@ The animation can alternatively be triggered at a specific position. In this exa
     	});
     </script>
 ```
-
-
-##### Hide before the animation starts
-It's time to take a look at some further customizations. If your animated element is going to be displayed as part of the initial view, remember to set the elements visibility to hidden. You can use this snippet.
-
-    .animationclass { visibility:hidden; }
-    
-
-    
-
-
