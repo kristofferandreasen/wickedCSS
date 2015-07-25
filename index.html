@@ -1,0 +1,402 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Wicked CSS3 Animations</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- favicon.ico in the root directory -->
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+        <!-- Material Design Icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+        <link rel="stylesheet" href="wickedcss.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="css/materialize.css"/>
+        <script src="js/modernizr-2.8.3.min.js"></script>
+
+    </head>
+    <body>
+
+        
+         <!-- Navigation -->
+        <div class="navbar-fixed">
+          <nav class="white" role="navigation">
+            <div class="nav-wrapper container"><a class="blue-text" href="http://kristofferandreasen.github.io/wickedCSS/">WickedCSS animations</a>
+              <ul class="right hide-on-med-and-down">
+                <li><a class="blue-text" href="examples.html">Examples</a></li>
+                <li><a class="blue-text" href="https://github.com/kristofferandreasen/wickedCSS">Github</a></li>
+                <li><a class="blue-text" href="documentation.html">How to use?</a></li>
+                <li><a class="blue-text" href="dist/wickedcss.min.css" download>Download</a></li>
+              </ul>
+
+              <ul id="nav-mobile" class="side-nav">
+                <li><a class="blue-text" href="examples.html">Examples</a></li>
+                <li><a class="blue-text" href="https://github.com/kristofferandreasen/wickedCSS">Github</a></li>
+                <li><a class="blue-text" href="documentation.html">How to use?</a></li>
+                <li><a class="blue-text" href="dist/wickedcss.min.css" download>Download</a></li>
+              </ul>
+              <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+            </div>
+          </nav>
+        </div>
+
+  
+         <!-- Animation image -->
+          <div class="section"></div>
+          <div class="section"></div>
+          <div class="section"></div>
+          <div class="section"></div>
+
+          <div class="container center-align">
+            <div class="col s12">
+                <div id="animationelement" class="floater"></div>
+            </div>
+          </div>
+
+          <div class="section"></div>
+          <div class="section"></div>
+
+          <div class="container center-align">
+            <div class="row">
+              <div class="col s12">
+                <h1 class="blue-text light">
+                  Let it rip!
+                </h1>
+              </div>
+            </div>
+             <div class="row">
+              <div class="col s12 m3 l2">
+                  <a href="#" id="floaterButton" class="waves-effect waves-light btn-large white blue-text" onclick="_gaq.push(['_trackEvent', 'floater', 'clicked'])">floater</a>
+                  <div class="section"></div>
+              </div>
+              <div class="col s12 m3 l2">
+                  <a href="#" id="barrelRollButton" class="waves-effect waves-light btn-large white blue-text" onclick="_gaq.push(['_trackEvent', 'barrelRoll', 'clicked'])">barrelRoll</a>
+                  <div class="section"></div>
+              </div>
+              <div class="col s12 m3 l2">
+                  <a href="#" id="rollerRightButton" class="waves-effect waves-light btn-large white blue-text" onclick="_gaq.push(['_trackEvent', 'rollerRight', 'clicked'])">rollerRight</a>
+                  <div class="section"></div>
+              </div>
+              <div class="col s12 m3 l2">
+                  <a href="#" id="rollerLeftButton" class="waves-effect waves-light btn-large white blue-text" onclick="_gaq.push(['_trackEvent', 'rollerLeft', 'clicked'])">rollerLeft</a>
+                  <div class="section"></div>
+              </div>
+              <div class="col s12 m3 l2">
+                  <a href="#" id="heartbeatButton" class="waves-effect waves-light btn-large white blue-text" onclick="_gaq.push(['_trackEvent', 'heartbeat', 'clicked'])">heartbeat</a>
+                  <div class="section"></div>
+              </div>
+              <div class="col s12 m3 l2">
+                  <a href="#" id="pulseButton" class="waves-effect waves-light btn-large white blue-text" onclick="_gaq.push(['_trackEvent', 'pulse', 'clicked'])">pulse</a>
+                  <div class="section"></div>
+              </div>
+              <div class="col s12 m3 l2">
+                  <a href="#" id="rotationButton" class="waves-effect waves-light btn-large white blue-text" onclick="_gaq.push(['_trackEvent', 'rotation', 'clicked'])">rotation</a>
+                  <div class="section"></div>
+              </div>
+              <div class="col s12 m3 l2">
+                  <a href="#" id="sideToSideButton" class="waves-effect waves-light btn-large white blue-text" onclick="_gaq.push(['_trackEvent', 'sideToSide', 'clicked'])">sideToSide</a>
+                  <div class="section"></div>
+              </div>
+              <div class="col s12 m3 l2">
+                  <a href="#" id="zoomerButton" class="waves-effect waves-light btn-large white blue-text" onclick="_gaq.push(['_trackEvent', 'zoomer', 'clicked'])">zoomer</a>
+                  <div class="section"></div>
+              </div>
+              <div class="col s12 m3 l2">
+                  <a href="#" id="zoomerOutButton" class="waves-effect waves-light btn-large white blue-text" onclick="_gaq.push(['_trackEvent', 'zoomerOut', 'clicked'])">zoomerOut</a>
+                  <div class="section"></div>
+              </div>
+              <div class="col s12 m3 l2">
+                  <a href="#" id="spinnerButton" class="waves-effect waves-light btn-large white blue-text" onclick="_gaq.push(['_trackEvent', 'spinner', 'clicked'])">spinner</a>
+                  <div class="section"></div>
+              </div>
+              <div class="col s12 m3 l2">
+                  <a href="#" id="wiggleButton" class="waves-effect waves-light btn-large white blue-text" onclick="_gaq.push(['_trackEvent', 'wiggle', 'clicked'])">wiggle</a>
+                  <div class="section"></div>
+              </div>
+              <div class="col s12 m3 l2">
+                  <a href="#" id="shakeButton" class="waves-effect waves-light btn-large white blue-text" onclick="_gaq.push(['_trackEvent', 'shake', 'clicked'])">shake</a>
+                  <div class="section"></div>
+              </div>
+               <div class="col s12 m3 l2">
+                  <a href="#" id="poundButton" class="waves-effect waves-light btn-large white blue-text" onclick="_gaq.push(['_trackEvent', 'pound', 'clicked'])">pound</a>
+                  <div class="section"></div>
+              </div>
+               <div class="col s12 m3 l2">
+                <a href="#" id="slideUpButton" class="waves-effect waves-light btn-large white blue-text" onclick="_gaq.push(['_trackEvent', 'slideUp', 'clicked'])">slideUp</a>
+                <div class="section"></div>
+              </div>
+              <div class="col s12 m3 l2">
+                <a href="#" id="slideDownButton" class="waves-effect waves-light btn-large white blue-text" onclick="_gaq.push(['_trackEvent', 'slideDown', 'clicked'])">slideDown</a>
+                <div class="section"></div>
+              </div>
+              <div class="col s12 m3 l2">
+                <a href="#" id="slideRightButton" class="waves-effect waves-light btn-large white blue-text" onclick="_gaq.push(['_trackEvent', 'slideRight', 'clicked'])">slideRight</a>
+                <div class="section"></div>
+              </div>
+              <div class="col s12 m3 l2">
+                <a href="#" id="slideLeftButton" class="waves-effect waves-light btn-large white blue-text" onclick="_gaq.push(['_trackEvent', 'slideLeft', 'clicked'])">slideLeft</a>
+                <div class="section"></div>
+              </div>
+              <div class="col s12 m3 l2">
+                <a href="#" id="fadeInButton" class="waves-effect waves-light btn-large white blue-text" onclick="_gaq.push(['_trackEvent', 'fadeIn', 'clicked'])">fadeIn</a>
+                <div class="section"></div>
+              </div>
+              <div class="col s12 m3 l2">
+                <a href="#" id="fadeOutButton" class="waves-effect waves-light btn-large white blue-text" onclick="_gaq.push(['_trackEvent', 'fadeOut', 'clicked'])">fadeOut</a>
+                <div class="section"></div>
+              </div>
+              <div class="col s12 m3 l2">
+                <a href="#" id="rotateInRightButton" class="waves-effect waves-light btn-large white blue-text" onclick="_gaq.push(['_trackEvent', 'rotateInRight', 'clicked'])">rotateInRight</a>
+                <div class="section"></div>
+              </div>
+              <div class="col s12 m3 l2">
+                <a href="#" id="rotateInLeftButton" class="waves-effect waves-light btn-large white blue-text" onclick="_gaq.push(['_trackEvent', 'rotateInLeft', 'clicked'])">rotateInLeft</a>
+                <div class="section"></div>
+              </div>
+               <div class="col s12 m3 l2">
+                <a href="#" id="rotateInButton" class="waves-effect waves-light btn-large white blue-text" onclick="_gaq.push(['_trackEvent', 'rotateIn', 'clicked'])">rotateIn</a>
+                <div class="section"></div>
+              </div>
+               <div class="col s12 m3 l2">
+                <a href="#" id="bounceInButton" class="waves-effect waves-light btn-large white blue-text" onclick="_gaq.push(['_trackEvent', 'bounceIn', 'clicked'])">bounceIn</a>
+                <div class="section"></div>
+              </div>
+            </div>
+          </div>
+
+  <footer class="page-footer blue lighten-2">
+            <div class="container">
+              <div class="row">
+                <div class="col l6 s12">
+                  <h5 class="white-text">WickedCSS</h5>
+                  <p class="grey-text text-lighten-4">For the ones looking to spice up their sites with some sweet animation effects. Find all you need here on the site and download the CSS file. Then you're ready to start adding animation to your content with simple classes.</p>
+
+
+                </div>
+                <div class="col l2 s12">
+                  <h5 class="white-text">Resources</h5>
+                  <ul>
+                    <li><a class="white-text" href="https://github.com/kristofferandreasen/wickedCSS">Github</a></li>
+                    <li><a class="white-text" href="dist/wickedcss.min.css" download>Download</a></li>
+                    <li><a class="white-text" href="examples.html">Examples</a></li>
+                    <li><a class="white-text" href="documentation.html">How to use?</a></li>
+                  </ul>
+                </div>
+                <div class="col l2 s12">
+                  <h5 class="white-text">Connect</h5>
+                  <ul>
+                     <li><a class="white-text" href="https://twitter.com/krillebimbim">Twitter</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer-copyright">
+              <div class="container">
+              Copyright <a class="orange-text text-lighten-3" href="https://github.com/kristofferandreasen">Kristoffer Andreasen</a>
+              </div>
+            </div>
+        </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+        <script src="js/materialize.js"></script>
+        <script src="js/wow.min.js"></script>
+        
+        <script>
+         new WOW().init();
+        </script>
+
+        <script>
+    /*
+    BUTTON FUNCTIONS
+    */
+    $('#rotationButton').click(function() {
+      $(this).each(function(){
+          $('#animationelement').removeClass(); 
+          $('#animationelement').addClass("rotation");
+        });
+    });
+
+    $('#sideToSideButton').click(function() {
+      $(this).each(function(){
+          $('#animationelement').removeClass(); 
+          $('#animationelement').addClass("sideToSide");
+        });
+    });
+
+    $('#zoomerButton').click(function() {
+      $(this).each(function(){
+          $('#animationelement').removeClass(); 
+          $('#animationelement').addClass("zoomer");
+        });
+    });
+
+     $('#zoomerOutButton').click(function() {
+      $(this).each(function(){
+          $('#animationelement').removeClass(); 
+          $('#animationelement').addClass("zoomerOut");
+        });
+    });
+
+    $('#spinnerButton').click(function() {
+      $(this).each(function(){
+          $('#animationelement').removeClass(); 
+          $('#animationelement').addClass("spinner");
+        });
+    });
+
+     $('#pulseButton').click(function() {
+      $(this).each(function(){
+          $('#animationelement').removeClass(); 
+          $('#animationelement').addClass("pulse");
+        });
+    });
+
+     $('#shakeButton').click(function() {
+      $(this).each(function(){
+          $('#animationelement').removeClass(); 
+          $('#animationelement').addClass("shake");
+        });
+    });
+
+     $('#barrelRollButton').click(function() {
+      $(this).each(function(){
+          $('#animationelement').removeClass(); 
+          $('#animationelement').addClass("barrelRoll");
+        });
+    });
+
+      $('#floaterButton').click(function() {
+      $(this).each(function(){
+          $('#animationelement').removeClass(); 
+          $('#animationelement').addClass("floater");
+        });
+    });
+
+      $('#wiggleButton').click(function() {
+      $(this).each(function(){
+          $('#animationelement').removeClass(); 
+          $('#animationelement').addClass("wiggle");
+        });
+    });
+
+      $('#poundButton').click(function() {
+      $(this).each(function(){
+          $('#animationelement').removeClass(); 
+          $('#animationelement').addClass("pound");
+        });
+    });
+
+    $('#rollerRightButton').click(function() {
+      $(this).each(function(){
+          $('#animationelement').removeClass(); 
+          $('#animationelement').addClass("rollerRight");
+        });
+    });
+
+    $('#rollerLeftButton').click(function() {
+      $(this).each(function(){
+          $('#animationelement').removeClass(); 
+          $('#animationelement').addClass("rollerLeft");
+        });
+    });
+
+    $('#heartbeatButton').click(function() {
+      $(this).each(function(){
+          $('#animationelement').removeClass(); 
+          $('#animationelement').addClass("heartbeat");
+        });
+    });
+
+    $('#fadeInButton').click(function() {
+      $(this).each(function(){
+          $('#animationelement').removeClass(); 
+          $('#animationelement').addClass("fadeIn");
+        });
+    });
+
+    $('#fadeOutButton').click(function() {
+      $(this).each(function(){
+          $('#animationelement').removeClass(); 
+          $('#animationelement').addClass("fadeOut");
+        });
+    });
+   
+    $('#slideUpButton').click(function() {
+      $(this).each(function(){
+          $('#animationelement').removeClass(); 
+          $('#animationelement').addClass("slideUp");
+        });
+    });
+
+    $('#slideDownButton').click(function() {
+      $(this).each(function(){
+          $('#animationelement').removeClass();       
+          $('#animationelement').addClass("slideDown");
+        });
+    }); 
+
+    $('#slideLeftButton').click(function() {
+      $(this).each(function(){
+          $('#animationelement').removeClass();       
+          $('#animationelement').addClass("slideLeft");
+        });
+    });   
+
+    $('#slideRightButton').click(function() {
+      $(this).each(function(){
+          $('#animationelement').removeClass();       
+          $('#animationelement').addClass("slideRight");
+        });
+    }); 
+
+    $('#rotateInRightButton').click(function() {
+      $(this).each(function(){
+          $('#animationelement').removeClass();       
+          $('#animationelement').addClass("rotateInRight");
+        });
+    });
+
+    $('#rotateInLeftButton').click(function() {
+      $(this).each(function(){
+          $('#animationelement').removeClass();       
+          $('#animationelement').addClass("rotateInLeft");
+        });
+    });
+
+     $('#rotateInButton').click(function() {
+      $(this).each(function(){
+          $('#animationelement').removeClass();       
+          $('#animationelement').addClass("rotateIn");
+        });
+    });
+
+     $('#bounceInButton').click(function() {
+      $(this).each(function(){
+          $('#animationelement').removeClass();       
+          $('#animationelement').addClass("bounceIn");
+        });
+    });      
+
+</script>
+
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+       <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-61819873-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+    </body>
+</html>
+

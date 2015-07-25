@@ -1,0 +1,259 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Wicked CSS3 Animations</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- favicon.ico in the root directory -->
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+        <!-- Material Design Icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+        <link rel="stylesheet" href="wickedcss.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="css/materialize.css"/>
+        <script src="js/modernizr-2.8.3.min.js"></script>
+
+    </head>
+    <body>
+
+        
+        <!-- Navigation -->
+        <div class="navbar-fixed">
+          <nav class="white" role="navigation">
+            <div class="nav-wrapper container"><a class="blue-text" href="http://kristofferandreasen.github.io/wickedCSS/">WickedCSS animations</a>
+              <ul class="right hide-on-med-and-down">
+                <li><a class="blue-text" href="examples.html">Examples</a></li>
+                <li><a class="blue-text" href="https://github.com/kristofferandreasen/wickedCSS">Github</a></li>
+                <li><a class="blue-text" href="documentation.html">How to use?</a></li>
+                <li><a class="blue-text" href="dist/wickedcss.min.css" download>Download</a></li>
+              </ul>
+
+              <ul id="nav-mobile" class="side-nav">
+                <li><a class="blue-text" href="examples.html">Examples</a></li>
+                <li><a class="blue-text" href="https://github.com/kristofferandreasen/wickedCSS">Github</a></li>
+                <li><a class="blue-text" href="documentation.html">How to use?</a></li>
+                <li><a class="blue-text" href="dist/wickedcss.min.css" download>Download</a></li>
+              </ul>
+              <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+            </div>
+          </nav>
+        </div>
+
+          <div class="container">
+            <div class="row">
+              <div class="col s12 center-align">
+                <h1 class="blue-text light">
+                  How do I get shenanigans on my site?
+                </h1>
+                <h4 class="grey-text light">
+                  Follow these instructions
+                </h4>
+              </div>
+            </div>
+          </div>
+            
+            <div class="container">
+            <div class="row">
+              <div class="col s12 m3 l2 offset-l1">
+                  <img class="numberimage center-align" src="images/number1.png">
+              </div>
+              <div class="col s12 m9 l9">
+                  <h5 class="grey-text">
+                    Start off by downloading and inserting the wickedCSS file in your project.
+                    Then simply link the script in your header:
+                  </h5>    
+                  <div class="section"></div>
+                    <code>
+                       &lt;link rel=&quot;stylesheet&quot; href=&quot;css/wickedcss.min.css&quot;&gt;
+                    </code>
+                  <div class="section"></div>
+                  <h5 class="grey-text">
+                    Or the non-minified version
+                  </h5>
+                   <div class="section"></div>
+                    <code>
+                       &lt;link rel=&quot;stylesheet&quot; href=&quot;css/wickedcss.css&quot;&gt;
+                    </code>
+                  <div class="section"></div>
+                  <blockquote class="grey-text">
+                    Remember to substitute the css directory with your css directory!
+                  </blockquote>
+              </div>
+            </div>
+          </div>
+          
+          <div class="section"></div>
+
+          <div class="container">
+            <div class="row">
+              <div class="col s12 m3 l2 offset-l1">
+                  <img class="numberimage center-align" src="images/number2.png">
+              </div>
+              <div class="col s12 m9 l9">
+                  <h5 class="grey-text">
+                    Simply add the animation class to your element and it will perform your wicked animation.
+                  </h5>
+                  <div class="section"></div>
+                    <code>
+                         &lt;div class=&quot;barrelRoll&quot;&gt; 
+                          Place your content here                 
+                         &lt;/div&gt;
+                    </code>
+                  <div class="section"></div>
+                  <h5 class="grey-text">
+                    This could also be any image.
+                  </h5>
+                  <div class="section"></div>
+                  <code>
+                         &lt;img src=&quot;images/mushroom.png&quot; class=&quot;spinner&quot;/&gt;
+                  </code>
+                  <div class="section"></div>
+                  <h5 class="grey-text">
+                    That's it. You should now see your animations on your page! You can continue to read for further customizations.
+                  </h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="row">
+              <div class="col s12 l9 offset-l3">
+                <h1 class="blue-text light">
+                  Advanced shenanigans
+                </h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="row">
+              <div class="col s12 m3 l2 offset-l1">
+                  <img class="numberimage center-align" src="images/number3.png">
+              </div>
+              <div class="col s12 m9 l9">
+                  <h5 class="grey-text">
+                    It's time to look at performing the animation while scrolling. The easiest way is to integrate the library with <a href="http://mynameismatthieu.com/WOW/index.html">wow.js</a>.
+                  </h5>
+                  <div class="section"></div>
+                    <code>
+                         &lt;div class=&quot;wow barrelRoll&quot;&gt; 
+                            Content to Reveal Here
+                         &lt;/div&gt;         
+                    </code>
+                  <div class="section"></div>
+                  <h5 class="grey-text">
+                    Alternatively, you can use jQuery to specify when the animation should trigger. Note that this option requires jQuery in your project. The animation will trigger when the animated element is 450 pixels from the top of the screen. To change this, simply change the 450 number to whatever you like.
+                  </h5>
+                  <code>
+                    &lt;script&gt;
+                      <br>  $&#40;window&#41;.scroll&#40;function&#40;&#41;&nbsp;{
+                      <br>  &emsp;  $&#40;'#animatedElement'&#41;.each&#40;function&#40;&#41;{
+                      <br>  &emsp;&emsp;  var&nbsp;imagePos&nbsp;=&nbsp;$&#40;this&#41;.offset&#40;&#41;.top;
+                      <br>  &emsp;&emsp;  var&nbsp;topOfWindow&nbsp;=&nbsp;$&#40;window&#41;.scrollTop&#40;&#41;;
+                      <br>  &emsp;&emsp;    if&nbsp;&#40;imagePos&nbsp;&lt;&nbsp;topOfWindow+450&#41;&nbsp;{
+                      <br>  &emsp;&emsp;      $&#40;this&#41;.addClass&#40;&quot;barrelRoll&quot;&#41;;
+                      <br>  &emsp;&emsp;    }
+                      <br>  &emsp;  }&#41;;
+                      <br>  }&#41;;
+                      <br>&lt;/script&gt;
+                  </code>
+               <h5 class="grey-text">
+                    The animations can also be triggered by a button like the ones on the project page. You can do this with a simple jQuery snippet.
+                  </h5>
+                   <code>
+                       &lt;script&gt; <br>
+                          &emsp;&emsp;  $('#animatedElement').click(function() {
+                               $(this).addClass(&quot;barrelRoll&quot;);
+                            });
+                      <br>&lt;/script&gt;
+                  </code>
+                </div>
+            </div>
+          </div>
+
+          
+          <div class="section"></div>
+          <div class="section"></div>
+
+          <div class="container">
+            <div class="row">
+              <div class="col s12 m3 l2 offset-l1">
+                  <img class="numberimage center-align" src="images/number4.png">
+              </div>
+              <div class="col s12 m9 l9">
+                  <h5 class="grey-text">
+                    The library is not a very heavy one. However, if you want to make it smaller, you can use a task runner to remove the css you don't use. If you are using grunt, <a href="https://github.com/addyosmani/grunt-uncss">uncss</a> can do this for you.
+                  </h5>
+                   <h5 class="grey-text">
+                     Alternatively, open the non-minified css version and simple grab the classes you want to use in your project.
+                   </h5>
+                  <div class="section"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="section"></div>
+
+
+   <footer class="page-footer blue lighten-2">
+            <div class="container">
+              <div class="row">
+                <div class="col l6 s12">
+                  <h5 class="white-text">WickedCSS</h5>
+                  <p class="grey-text text-lighten-4">For the ones looking to spice up their sites with some sweet animation effects. Find all you need here on the site and download the CSS file. Then you're ready to start adding animation to your content with simple classes.</p>
+
+
+                </div>
+                <div class="col l3 s12">
+                  <h5 class="white-text">Resources</h5>
+                  <ul>
+                    <li><a class="white-text" href="https://github.com/kristofferandreasen/wickedCSS">Github</a></li>
+                    <li><a class="white-text" href="dist/wickedcss.min.css" download>Download</a></li>
+                    <li><a class="white-text" href="examples.html">Examples</a></li>
+                    <li><a class="white-text" href="documentation.html">How to use?</a></li>
+                  </ul>
+                </div>
+                <div class="col l3 s12">
+                  <h5 class="white-text">Connect</h5>
+                  <ul>
+                     <li><a class="white-text" href="https://twitter.com/krillebimbim">Twitter</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer-copyright">
+              <div class="container">
+              Copyright <a class="orange-text text-lighten-3" href="https://github.com/kristofferandreasen">Kristoffer Andreasen</a>
+              </div>
+            </div>
+        </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+        <script src="js/materialize.js"></script>
+        <script src="js/wow.min.js"></script>
+
+        <script>
+         new WOW().init();
+        </script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+       <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-61819873-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+    </body>
+</html>
+
