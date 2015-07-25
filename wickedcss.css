@@ -490,7 +490,6 @@ rollerRight
 	-webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 
-    visibility: visible !important;	
 }
 @keyframes rollerRight {
   0% {
@@ -535,7 +534,6 @@ rollerLeft
 	-webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 
-    visibility: visible !important;	
 }
 @keyframes rollerLeft {
   0% {
@@ -579,8 +577,7 @@ slideDown
 
 	animation-timing-function: ease;	
 	-webkit-animation-timing-function: ease;	
-
-	visibility: visible !important;						
+				
 }
 
 @keyframes slideDown {
@@ -621,8 +618,7 @@ slideUp
 
 	animation-timing-function: ease;	
 	-webkit-animation-timing-function: ease;
-
-	visibility: visible !important;			
+	
 }
 
 @keyframes slideUp {
@@ -664,7 +660,6 @@ slideLeft
 	animation-timing-function: ease;	
 	-webkit-animation-timing-function: ease;		
 
-	visibility: visible !important;	
 }
 
 @keyframes slideLeft {
@@ -706,7 +701,6 @@ slideRight
 	animation-timing-function: ease;	
 	-webkit-animation-timing-function: ease;		
 
-	visibility: visible !important;	
 }
 
 @keyframes slideRight {
@@ -827,8 +821,7 @@ rotateInRight
 
 	-webkit-animation-iteration-count: 1;
     animation-iteration-count: 1;	
-
-	visibility: visible !important;						
+					
 }
 @-webkit-keyframes rotateInRight {
     from { 
@@ -864,8 +857,7 @@ rotateInLeft
 
 	-webkit-animation-iteration-count: 1;
     animation-iteration-count: 1;	
-
-	visibility: visible !important;						
+					
 }
 @-webkit-keyframes rotateInLeft {
     from { 
@@ -904,8 +896,7 @@ rotateIn
 
  -webkit-transform-origin: center;
  transform-origin: center;
-
- visibility: visible !important;			
+		
 }
 
 
