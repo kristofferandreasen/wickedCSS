@@ -1586,6 +1586,7 @@ $(document).ready(function(){
             element.addEventListener('mouseup', Effect.hide, false);
             element.addEventListener('mouseleave', Effect.hide, false);
         }
+	e.preventDefault();    
     }
 
     Waves.displayEffect = function(options) {
